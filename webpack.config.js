@@ -6,6 +6,19 @@ module.exports = {
     },
     output: {
         filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
+    devServer: {
+        contentBase: './dist',
+        open: 'opera',
+        openPage: 'uikit/',
+        hot: true,
+        compress: true,
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
     },
     module: {
         rules: [
