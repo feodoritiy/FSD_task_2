@@ -29,19 +29,19 @@ module.exports = {
             filename: 'uikit/index.html',
             template: 'src/uikit/index.pug',
         }),
-        new HTMLWebpackPlugi({
+        new HTMLWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.pug',
         }),
         new SASSWebpackPlugin({
-            'uikit/index.scss': 'uikit/index.css',
-            'index.scss': 'index.css',
+            'src/uikit/index.scss': 'uikit/index.css',
+            'src/index.scss': 'index.css',
         }),
     ],
     module: {
         rules: [
             {
-                template: /\.(scss|sass)$/,
+                test: /\.(scss|sass)$/,
                 use: [
                     'css-loader',
                     'sass-loader',
