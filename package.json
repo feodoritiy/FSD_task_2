@@ -1,0 +1,25 @@
+{
+  "name": "FSD_task_2",
+  "version": "1.0.0",
+  "description": "**Webpack + SCSS + PUG** realization of second FSD task - Layout practice",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://feodoritiy:basketball-sport@github.com/feodoritiy/FSD_task_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feodoritiy/FSD_task_2/issues"
+  },
+  "homepage": "https://github.com/feodoritiy/FSD_task_2#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
