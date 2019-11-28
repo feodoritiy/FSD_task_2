@@ -49,6 +49,18 @@ module.exports = {
                     'style-loader',
                 ],
             },
+            {
+                test: /\.(png|svg|jp?eg|gif)$/i,
+                use: [
+                    'file-loader',
+                ],
+            },
+            {
+                test: /\.(ttf|woff|woff|eot|otf)$/i,
+                use: [
+                    'file-loader',
+                ]
+            }
         ],
     },
 }
