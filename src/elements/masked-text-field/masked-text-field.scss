@@ -1,0 +1,4 @@
+@import '../../constants/templates.scss';
+.masked-text-field {
+	@extend %basicInput;
+}

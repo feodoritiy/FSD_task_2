@@ -2,6 +2,7 @@
 @import '../constants/types.scss';
 @import '../elements/text-field/text-field.scss';
 @import '../elements/dropdown/dropdown.scss';
+@import '../elements/masked-text-field/masked-text-field.scss';
 body {
 	@extend %textBody;
 }

@@ -1,7 +1,8 @@
 let path = require('path'),
     HTMLWebpackPlugin = require('html-webpack-plugin'),
     { CleanWebpackPlugin } = require('clean-webpack-plugin'),
-    SASSWebpackPlugin = require('sass-webpack-plugin');
+    SASSWebpackPlugin = require('sass-webpack-plugin'),
+    webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -37,6 +38,11 @@ module.exports = {
         new SASSWebpackPlugin({
             'src/uikit/index.scss': 'uikit/index.css',
             'src/index.scss': 'index.css',
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            inputmask: './src/jquery.inputmask.min.js',
         }),
     ],
     module: {
