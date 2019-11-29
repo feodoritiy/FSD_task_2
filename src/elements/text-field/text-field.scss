@@ -1,0 +1,9 @@
+@import '../../constants/colors.scss';
+input.text-field {
+	@extend %basicInput;
+
+	&:hover,
+	&:focus {
+		border-color: $darkshade50;
+	}
+}

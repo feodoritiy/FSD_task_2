@@ -1,0 +1,17 @@
+@import '../constants/colors.scss';
+@import '../constants/types.scss';
+@import '../elements/text-field/text-field.scss';
+@import '../elements/dropdown/dropdown.scss';
+body {
+	@extend %textBody;
+}
+
+h1 {
+	@extend %textH1;
+}
+h2 {
+	@extend %textH2;
+}
+h3 {
+	@extend %textH3;
+}

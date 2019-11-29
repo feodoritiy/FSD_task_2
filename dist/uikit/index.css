@@ -1,2 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:700&display=swap&subset=cyrillic-ext");
+/* line 3, src/constants/types.scss */
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+/* line 11, src/constants/types.scss */
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px; }
+
+/* line 19, src/constants/types.scss */
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase; }
+
+/* line 30, src/constants/types.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */ }
+
+/* line 5, src/elements/text-field/text-field.scss */
+input.text-field:hover, input.text-field:focus {
+  border-color: rgba(31, 32, 65, 0.5); }
+
+/* line 1, src/constants/templates.scss */
+input.text-field, .dropdown {
+  height: 2.75em;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  outline: none;
+  padding: 1em 1.1em;
+  font-family: inherit; }
+
+/* line 3, src/elements/dropdown/dropdown.scss */
+.dropdown {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2.75em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  background-image: url(../img/keyboard_arrow_down-24px.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
+  /* line 17, src/elements/dropdown/dropdown.scss */
+  .dropdown:hover, .dropdown:focus {
+    border-color: rgba(31, 32, 65, 0.5); }
 
 /*# sourceMappingURL=index.css.map */

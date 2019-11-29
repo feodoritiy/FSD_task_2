@@ -1,0 +1,6 @@
+mixin dropdown(options)
+	select.dropdown&attributes(attributes)
+		each option in options
+			option= option
+		if block
+			block

@@ -29,7 +29,6 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: 'uikit/index.html',
             template: 'src/uikit/index.pug',
-            links: [{ rel: 'stylesheet', src: 'index.css' }]
         }),
         new HTMLWebpackPlugin({
             filename: 'index.html',
@@ -52,9 +51,11 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jp?eg|gif)$/i,
-                use: [
-                    'file-loader',
-                ],
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: './img',
+                },
             },
             {
                 test: /\.(ttf|woff|woff|eot|otf)$/i,

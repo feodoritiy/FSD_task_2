@@ -1,0 +1,37 @@
+@import './fonts.scss';
+
+%textH1 {
+	font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+%textH2 {
+	font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 24px;
+}
+
+%textH3 {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+
+	text-transform: uppercase;
+}
+
+%textBody {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* or 171% */
+}

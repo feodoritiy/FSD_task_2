@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/elements/dropdown/keyboard_arrow_down-24px.svg":
+/*!************************************************************!*\
+  !*** ./src/elements/dropdown/keyboard_arrow_down-24px.svg ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/keyboard_arrow_down-24px.svg\");\n\n//# sourceURL=webpack:///./src/elements/dropdown/keyboard_arrow_down-24px.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements/dropdown/keyboard_arrow_down-24px.svg */ \"./src/elements/dropdown/keyboard_arrow_down-24px.svg\");\n\nconsole.log(_elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
