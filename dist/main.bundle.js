@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements/dropdown/keyboard_arrow_down-24px.svg */ \"./src/elements/dropdown/keyboard_arrow_down-24px.svg\");\n\nconsole.log(_elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements/dropdown/keyboard_arrow_down-24px.svg */ \"./src/elements/dropdown/keyboard_arrow_down-24px.svg\");\n\r\nconsole.log(_elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

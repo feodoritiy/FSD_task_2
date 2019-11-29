@@ -39,7 +39,7 @@ input.text-field:hover, input.text-field:focus {
   border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 1, src/constants/templates.scss */
-input.text-field, .dropdown {
+input.text-field, .dropdown, .masked-text-field {
   height: 2.75em;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -64,5 +64,16 @@ input.text-field, .dropdown {
   /* line 17, src/elements/dropdown/dropdown.scss */
   .dropdown:hover, .dropdown:focus {
     border-color: rgba(31, 32, 65, 0.5); }
+
+/* line 1, src/constants/templates.scss */
+input.text-field, .dropdown, .masked-text-field {
+  height: 2.75em;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  outline: none;
+  padding: 1em 1.1em;
+  font-family: inherit; }
 
 /*# sourceMappingURL=index.css.map */
