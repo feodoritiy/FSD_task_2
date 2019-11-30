@@ -1,16 +1,5 @@
 @import '../../constants/colors.scss', '../../constants/templates.scss';
 
 .dropdown {
-	@extend %basicInput;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-right: 2.75em;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-
-	background-image: url(../img/keyboard_arrow_down-24px.svg);
-	background-repeat: no-repeat;
-	background-position: calc(100% - 2.75em / 2 + 0.925em) center;
+	@extend %basicDropdown;
 }
