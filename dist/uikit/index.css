@@ -34,20 +34,19 @@ body {
   line-height: 24px;
   /* or 171% */ }
 
-/* line 5, src/elements/text-field/text-field.scss */
-input.text-field:hover, input.text-field:focus {
-  border-color: rgba(31, 32, 65, 0.5); }
-
 /* line 1, src/constants/templates.scss */
 input.text-field, .dropdown, .masked-text-field {
   height: 2.75em;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 0.25em;
   outline: none;
-  padding: 1em 1.1em;
+  padding-left: 1.1em;
   font-family: inherit; }
+  /* line 11, src/constants/templates.scss */
+  input.text-field:hover, .dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, .masked-text-field:focus {
+    border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 3, src/elements/dropdown/dropdown.scss */
 .dropdown {
@@ -61,19 +60,19 @@ input.text-field, .dropdown, .masked-text-field {
   background-image: url(../img/keyboard_arrow_down-24px.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-  /* line 17, src/elements/dropdown/dropdown.scss */
-  .dropdown:hover, .dropdown:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 1, src/constants/templates.scss */
 input.text-field, .dropdown, .masked-text-field {
   height: 2.75em;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 0.25em;
   outline: none;
-  padding: 1em 1.1em;
+  padding-left: 1.1em;
   font-family: inherit; }
+  /* line 11, src/constants/templates.scss */
+  input.text-field:hover, .dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, .masked-text-field:focus {
+    border-color: rgba(31, 32, 65, 0.5); }
 
 /*# sourceMappingURL=index.css.map */

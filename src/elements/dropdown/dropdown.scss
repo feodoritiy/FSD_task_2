@@ -13,9 +13,4 @@
 	background-image: url(../img/keyboard_arrow_down-24px.svg);
 	background-repeat: no-repeat;
 	background-position: calc(100% - 2.75em / 2 + 0.925em) center;
-
-	&:hover,
-	&:focus {
-		border-color: $darkshade50;
-	}
 }

@@ -1,12 +1,10 @@
+import Inputmask from "inputmask";
 export function maskAllMaskedTextFileds() {
+    let mask = new Inputmask('datetime', {
+        inputFormat: 'dd.mm.yyyy',
+        placeholder: 'DD.MM.YYYY',
+    });
     document.querySelectorAll("input.masked-text-field").forEach(el => {
-        let innerInputmask = el.dataset.inputmask;
-        if (innerInputmask) {
-            let maskParts = innerInputmask.split(":");
-            let mask = new Inputmask({
-                [maskParts[0]]: maskParts[1]
-            });
-            mask.mask(el);
-        }
+        mask.mask(el);
     });
 }
