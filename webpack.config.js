@@ -1,4 +1,4 @@
-let path = require('path'),
+const path = require('path'),
     HTMLWebpackPlugin = require('html-webpack-plugin'),
     { CleanWebpackPlugin } = require('clean-webpack-plugin'),
     SASSWebpackPlugin = require('sass-webpack-plugin'),
@@ -26,8 +26,8 @@ module.exports = {
         },
     },
     resolve: {
-        alials: {
-            Images: path.resolve(__dirname, 'src/constants/images'),
+        alias: {
+            Images: path.resolve(__dirname, 'src', 'images'),
         },
     },
     plugins: [
@@ -48,7 +48,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             jquery: 'jquery',
-        })
+        }),
     ],
     module: {
         rules: [

@@ -155,18 +155,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/elements/dropdown/keyboard_arrow_down-24px.svg":
-/*!************************************************************!*\
-  !*** ./src/elements/dropdown/keyboard_arrow_down-24px.svg ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/keyboard_arrow_down-24px.svg\");\n\n//# sourceURL=webpack:///./src/elements/dropdown/keyboard_arrow_down-24px.svg?");
-
-/***/ }),
-
 /***/ "./src/elements/masked-text-field/masked-text-field.js":
 /*!*************************************************************!*\
   !*** ./src/elements/masked-text-field/masked-text-field.js ***!
@@ -179,6 +167,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
+/***/ "./src/images/keyboard_arrow_down-24px.svg":
+/*!*************************************************!*\
+  !*** ./src/images/keyboard_arrow_down-24px.svg ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/keyboard_arrow_down-24px.svg\");\n\n//# sourceURL=webpack:///./src/images/keyboard_arrow_down-24px.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -187,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements/dropdown/keyboard_arrow_down-24px.svg */ \"./src/elements/dropdown/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__[\"maskAllMaskedTextFileds\"])();\r\nconsole.log(_elements_dropdown_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__[\"maskAllMaskedTextFileds\"])();\r\nconsole.log(Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
