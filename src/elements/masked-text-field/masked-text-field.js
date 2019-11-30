@@ -4,7 +4,7 @@ export function maskAllMaskedTextFileds() {
         inputFormat: 'dd.mm.yyyy',
         placeholder: 'ДД.ММ.ГГГГ',
     });
-    document.querySelectorAll("input.masked-text-field").forEach(el => {
-        mask.mask(el);
+    $("input.masked-text-field").each(function () {
+        mask.mask(this);
     });
 }
