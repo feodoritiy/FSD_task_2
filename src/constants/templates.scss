@@ -1,4 +1,6 @@
+@import '../constants/colors.scss';
 %basicInput {
+	color: $darkshade75;
 	height: 2.75em;
 	background-color: #ffffff;
 	border: 1px solid $darkshade25;

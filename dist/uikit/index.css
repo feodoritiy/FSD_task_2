@@ -34,8 +34,9 @@ body {
   line-height: 24px;
   /* or 171% */ }
 
-/* line 1, src/constants/templates.scss */
+/* line 2, src/constants/templates.scss */
 input.text-field, .dropdown, .masked-text-field {
+  color: rgba(31, 32, 65, 0.75);
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -44,7 +45,7 @@ input.text-field, .dropdown, .masked-text-field {
   outline: none;
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 11, src/constants/templates.scss */
+  /* line 13, src/constants/templates.scss */
   input.text-field:hover, .dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
@@ -61,8 +62,9 @@ input.text-field, .dropdown, .masked-text-field {
   background-repeat: no-repeat;
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
 
-/* line 1, src/constants/templates.scss */
+/* line 2, src/constants/templates.scss */
 input.text-field, .dropdown, .masked-text-field {
+  color: rgba(31, 32, 65, 0.75);
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -71,7 +73,7 @@ input.text-field, .dropdown, .masked-text-field {
   outline: none;
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 11, src/constants/templates.scss */
+  /* line 13, src/constants/templates.scss */
   input.text-field:hover, .dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
