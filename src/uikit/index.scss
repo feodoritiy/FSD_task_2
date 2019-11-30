@@ -3,6 +3,7 @@
 @import '../elements/text-field/text-field.scss';
 @import '../elements/dropdown/dropdown.scss';
 @import '../elements/masked-text-field/masked-text-field.scss';
+@import '../elements/date-dropdown/date-dropdown.scss';
 body {
 	@extend %textBody;
 }

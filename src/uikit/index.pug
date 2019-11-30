@@ -1,6 +1,7 @@
 include ../elements/text-field/text-field.pug
 include ../elements/dropdown/dropdown.pug
 include ../elements/masked-text-field/masked-text-field.pug
+include ../elements/date-dropdown/date-dropdown.pug
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -17,4 +18,6 @@ html(lang="ru")
         +dropdown(["one", "two", "three"]) 
         br
         +masked-text-field("ДД.ММ.ГГГГ") 
+        br
+        +date-dropdown(['19.03.1988', '13.03.2019'])
         br
