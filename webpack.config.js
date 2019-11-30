@@ -25,6 +25,11 @@ module.exports = {
             chunks: 'all',
         },
     },
+    resolve: {
+        alials: {
+            Images: path.resolve(__dirname, 'src/constants/images'),
+        },
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
