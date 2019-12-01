@@ -1,0 +1,6 @@
+mixin subscription-text-field(placeholder)
+	.subscription-text-field&attributes(attributes)
+		input(type="text", placeholder=placeholder)
+		button(type="submit")
+		if block
+			block

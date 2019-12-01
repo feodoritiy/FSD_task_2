@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/index.js","vendors~main"]);
+/******/ 	deferredModules.push(["./src/index.js","vendors~main~uikit","vendors~main"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -164,6 +164,54 @@
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"maskAllMaskedTextFileds\", function() { return maskAllMaskedTextFileds; });\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);\n\r\nfunction maskAllMaskedTextFileds() {\r\n    let mask = new inputmask__WEBPACK_IMPORTED_MODULE_0___default.a('datetime', {\r\n        inputFormat: 'dd.mm.yyyy',\r\n        placeholder: 'ДД.ММ.ГГГГ',\r\n    });\r\n    $(\"input.masked-text-field\").each(function () {\r\n        mask.mask(this);\r\n    });\r\n}\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/masked-text-field/masked-text-field.js?");
+
+/***/ }),
+
+/***/ "./src/elements/subscription-text-field/subscription-text-field.js":
+/*!*************************************************************************!*\
+  !*** ./src/elements/subscription-text-field/subscription-text-field.js ***!
+  \*************************************************************************/
+/*! exports provided: handleSubscriptionTextFieldButtonsClick */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"handleSubscriptionTextFieldButtonsClick\", function() { return handleSubscriptionTextFieldButtonsClick; });\nfunction handleSubscriptionTextFieldButtonsClick() {\n    $(document).ready(() => {\n        $(\".subscription-text-field button\").each(function () {\n            $(this).on(\"click\", () => {\n                alert('.subscription-text-field button clicked');\n            });\n        });\n    });\n}\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/subscription-text-field/subscription-text-field.js?");
+
+/***/ }),
+
+/***/ "./src/images/arrow_back-24px.svg":
+/*!****************************************!*\
+  !*** ./src/images/arrow_back-24px.svg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/arrow_back-24px.svg\");\n\n//# sourceURL=webpack:///./src/images/arrow_back-24px.svg?");
+
+/***/ }),
+
+/***/ "./src/images/arrow_forward-24px_black.svg":
+/*!*************************************************!*\
+  !*** ./src/images/arrow_forward-24px_black.svg ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/arrow_forward-24px_black.svg\");\n\n//# sourceURL=webpack:///./src/images/arrow_forward-24px_black.svg?");
+
+/***/ }),
+
+/***/ "./src/images/arrow_forward-24px_purple.svg":
+/*!**************************************************!*\
+  !*** ./src/images/arrow_forward-24px_purple.svg ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/arrow_forward-24px_purple.svg\");\n\n//# sourceURL=webpack:///./src/images/arrow_forward-24px_purple.svg?");
 
 /***/ }),
 
@@ -187,7 +235,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__[\"maskAllMaskedTextFileds\"])();\r\nconsole.log(Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var Images_arrow_forward_24px_black_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/arrow_forward-24px_black.svg */ \"./src/images/arrow_forward-24px_black.svg\");\n/* harmony import */ var Images_arrow_forward_24px_purple_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/arrow_forward-24px_purple.svg */ \"./src/images/arrow_forward-24px_purple.svg\");\n/* harmony import */ var Images_arrow_back_24px_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/arrow_back-24px.svg */ \"./src/images/arrow_back-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./elements/subscription-text-field/subscription-text-field.js */ \"./src/elements/subscription-text-field/subscription-text-field.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__[\"maskAllMaskedTextFileds\"])();\r\n\r\nObject(_elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__[\"handleSubscriptionTextFieldButtonsClick\"])();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

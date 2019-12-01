@@ -1,12 +1,45 @@
 @import '../constants/colors.scss';
-%basicInput {
+$inputSize: 2.75em;
+
+%basicInputStatic {
 	color: $darkshade75;
-	height: 2.75em;
-	background-color: #ffffff;
-	border: 1px solid $darkshade25;
 	box-sizing: border-box;
 	border-radius: 0.25em;
 	outline: none;
+}
+
+%basicInput {
+	@extend %basicInputStatic;
+	height: $inputSize;
+	background-color: #ffffff;
+	border: 1px solid $darkshade25;
+	padding-left: 1.1em;
+	font-family: inherit;
+
+	&:hover,
+	&:focus {
+		border-color: $darkshade50;
+	}
+}
+
+%basicInputNoPadding {
+	@extend %basicInputStatic;
+	height: $inputSize;
+	background-color: #ffffff;
+	border: 1px solid $darkshade25;
+	font-family: inherit;
+
+	&:hover,
+	&:focus {
+		border-color: $darkshade50;
+	}
+}
+
+%basicInputNoBorder {
+	@extend %basicInputStatic;
+	height: $inputSize;
+	background-color: #ffffff;
+	border: none;
 	padding-left: 1.1em;
 	font-family: inherit;
 
@@ -20,7 +53,7 @@
 	@extend %basicInput;
 	padding-top: 0;
 	padding-bottom: 0;
-	padding-right: 2.75em;
+	padding-right: $inputSize;
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -28,5 +61,5 @@
 
 	background-image: url(../img/keyboard_arrow_down-24px.svg);
 	background-repeat: no-repeat;
-	background-position: calc(100% - 2.75em / 2 + 0.925em) center;
+	background-position: calc(100% - #{$inputSize} / 2 + 0.925em) center;
 }
