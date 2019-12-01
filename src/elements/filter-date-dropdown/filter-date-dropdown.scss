@@ -1,0 +1,4 @@
+@import '../../constants/templates.scss';
+.filter-date-dropdown {
+	@extend %basicDropdown;
+}

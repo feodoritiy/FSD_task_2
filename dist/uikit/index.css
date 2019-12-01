@@ -35,7 +35,7 @@ body {
   /* or 171% */ }
 
 /* line 2, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
+input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
   color: rgba(31, 32, 65, 0.75);
   height: 2.75em;
   background-color: #ffffff;
@@ -46,11 +46,11 @@ input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
   padding-left: 1.1em;
   font-family: inherit; }
   /* line 13, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .masked-text-field:focus {
+  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 19, src/constants/templates.scss */
-.dropdown, select.date-dropdown {
+.dropdown, select.date-dropdown, .filter-date-dropdown {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 2.75em;
@@ -63,7 +63,7 @@ input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
 
 /* line 2, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
+input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
   color: rgba(31, 32, 65, 0.75);
   height: 2.75em;
   background-color: #ffffff;
@@ -74,11 +74,11 @@ input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
   padding-left: 1.1em;
   font-family: inherit; }
   /* line 13, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .masked-text-field:focus {
+  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 19, src/constants/templates.scss */
-.dropdown, select.date-dropdown {
+.dropdown, select.date-dropdown, .filter-date-dropdown {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 2.75em;
@@ -91,7 +91,7 @@ input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
 
 /* line 2, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
+input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
   color: rgba(31, 32, 65, 0.75);
   height: 2.75em;
   background-color: #ffffff;
@@ -102,11 +102,39 @@ input.text-field, .dropdown, select.date-dropdown, .masked-text-field {
   padding-left: 1.1em;
   font-family: inherit; }
   /* line 13, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .masked-text-field:focus {
+  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 19, src/constants/templates.scss */
-.dropdown, select.date-dropdown {
+.dropdown, select.date-dropdown, .filter-date-dropdown {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2.75em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  background-image: url(../img/keyboard_arrow_down-24px.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
+
+/* line 2, src/constants/templates.scss */
+input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
+  color: rgba(31, 32, 65, 0.75);
+  height: 2.75em;
+  background-color: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  outline: none;
+  padding-left: 1.1em;
+  font-family: inherit; }
+  /* line 13, src/constants/templates.scss */
+  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
+    border-color: rgba(31, 32, 65, 0.5); }
+
+/* line 19, src/constants/templates.scss */
+.dropdown, select.date-dropdown, .filter-date-dropdown {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 2.75em;
