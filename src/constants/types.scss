@@ -1,4 +1,5 @@
 @import './fonts.scss';
+@import './colors.scss';
 
 %textH1 {
 	font-family: 'Quicksand', sans-serif;
@@ -17,11 +18,13 @@
 }
 
 %textH3 {
+	margin: auto;
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 15px;
+	color: $darkshade100;
 	/* identical to box height */
 
 	text-transform: uppercase;
