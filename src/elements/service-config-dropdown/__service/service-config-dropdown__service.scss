@@ -1,0 +1,49 @@
+.service-config-dropdown {
+	* {
+		box-sizing: border-box;
+	}
+
+	td {
+		padding: 0;
+
+		&.fixed-width {
+			width: 1em;
+		}
+	}
+
+	&__service {
+		margin-bottom: 0.5em;
+
+		$serviceButtonSize: 1.875em;
+		%service-button {
+			height: $serviceButtonSize;
+			width: $serviceButtonSize;
+			background: transparent;
+			border-radius: 50%;
+			border: $inputBorder;
+			color: $darkshade50;
+			outline: none;
+			cursor: pointer;
+			transition: 0.1s;
+			margin-bottom: 0.25em;
+
+			&[disabled] {
+				opacity: 0.38;
+			}
+		}
+		&-less-button {
+			@extend %service-button;
+		}
+		&-more-button {
+			@extend %service-button;
+			margin-right: 0.25em;
+		}
+		&-button_clicked {
+			transform: scale(0.95, 0.95);
+		}
+		&-value {
+			width: $serviceButtonSize;
+			text-align: center;
+		}
+	}
+}

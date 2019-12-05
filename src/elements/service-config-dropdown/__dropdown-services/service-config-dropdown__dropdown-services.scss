@@ -1,0 +1,19 @@
+@import '../__service/service-config-dropdown__service.scss';
+.service-config-dropdown__dropdown-services {
+	$borderStyle: 1px solid $darkshade50;
+	border-bottom: $borderStyle;
+	position: absolute;
+	width: inherit;
+	table {
+		width: 100%;
+		border: $borderStyle;
+		border-top: none;
+		border-bottom: none;
+		padding-top: 0.25em;
+		padding-left: calc(#{$inputPaddingLeft} - 3px);
+		tbody {
+			@extend %basicInputStatic; //src/constants/templates.scss
+			width: 100%;
+		}
+	}
+}

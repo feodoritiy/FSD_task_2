@@ -1,0 +1,7 @@
+include ../__service/service-config-dropdown__service.pug
+mixin service-config-dropdown__dropdown-services(services)
+	.service-config-dropdown__dropdown-services&attributes(attributes)
+		table
+			tbody
+				each service_name in services
+					+service-config-dropdown__service(service_name)

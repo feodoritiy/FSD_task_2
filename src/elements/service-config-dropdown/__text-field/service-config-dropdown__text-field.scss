@@ -1,0 +1,15 @@
+.service-config-dropdown__text-field {
+	// @include basicInput('border-radius');
+	position: relative;
+	border-top-left-radius: $inputBorderRadius;
+	border-top-right-radius: $inputBorderRadius;
+	input[type='text'] {
+		// @include basicInput('border' 'padding-left');
+		width: calc(100% - #{$inputSize});
+	}
+	button[type='submit'] {
+		@extend %basicInputSingleButton;
+		// background-image: url(../img/keyboard_arrow_down-24px.svg);
+		background-image: url(../../../images/keyboard_arrow_down-24px.svg);
+	}
+}

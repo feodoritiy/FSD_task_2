@@ -1,0 +1,6 @@
+include __dropdown-services/service-config-dropdown__dropdown-services.pug
+include __text-field/service-config-dropdown__text-field.pug
+mixin service-config-dropdown(services)
+	.service-config-dropdown&attributes(attributes)
+		+service-config-dropdown__text-field()
+		+service-config-dropdown__dropdown-services(services)(style="display: none")
