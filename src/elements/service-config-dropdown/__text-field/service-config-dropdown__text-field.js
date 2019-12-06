@@ -1,6 +1,12 @@
 $(document).ready(() => {
     let namespace = '.service-config-dropdown';
 
+    $(namespace + '__text-field input').on('click', e => {
+        let el = $(namespace + '__dropdown-services');
+        el[0].isOpened = true;
+        el.slideDown(1000);
+    });
+
     let outputTextField = $(namespace + '__text-field input')[0];
     console.log(outputTextField);
     outputTextField.services = []; //[{names:[],value}, {names:[],value}]
