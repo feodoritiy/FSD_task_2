@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/index.js","vendors~main~uikit","vendors~main"]);
+/******/ 	deferredModules.push(["./src/index.js","vendors~main"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -167,15 +167,60 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
+/***/ "./src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.js":
+/*!****************************************************************************************************************!*\
+  !*** ./src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.js ***!
+  \****************************************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _service_service_config_dropdown_service_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../__service/service-config-dropdown__service.js */ \"./src/elements/service-config-dropdown/__service/service-config-dropdown__service.js\");\n/* harmony import */ var _service_service_config_dropdown_service_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_service_service_config_dropdown_service_js__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.js?");
+
+/***/ }),
+
+/***/ "./src/elements/service-config-dropdown/__service/service-config-dropdown__service.js":
+/*!********************************************************************************************!*\
+  !*** ./src/elements/service-config-dropdown/__service/service-config-dropdown__service.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\r\n    function clickAnimation(button) {\r\n        $(button).on(\"mousedown\", function () {\r\n            button.classList.add('service-config-dropdown__service-button_clicked');\r\n        });\r\n        $(button).on(\"mouseup\", function () {\r\n            button.classList.remove('service-config-dropdown__service-button_clicked');\r\n        });\r\n    }\r\n\r\n    let service_namespace = '.service-config-dropdown__service';\r\n    $(service_namespace).each(function () {\r\n\r\n        let dropdown_els = {\r\n            dropdown: this,\r\n            lessButton: $(this).find(service_namespace + '-less-button')[0],\r\n            moreButton: $(this).find(service_namespace + '-more-button')[0],\r\n            value: $(this).find(service_namespace + '-value')[0],\r\n        };\r\n\r\n        //less button\r\n        if (dropdown_els.value.textContent === '0') {\r\n            dropdown_els.lessButton.setAttribute('disabled', '');\r\n        }\r\n        clickAnimation(dropdown_els.lessButton);\r\n        $(dropdown_els.lessButton).on('click', () => {\r\n            const button = dropdown_els.lessButton;\r\n            if (+dropdown_els.value.textContent > 0) {\r\n                if (dropdown_els.value.textContent === '1') {\r\n                    button.setAttribute('disabled', '');\r\n                }\r\n                dropdown_els.value.textContent = +dropdown_els.value.textContent - 1;\r\n            }\r\n        });\r\n\r\n        //more button\r\n        clickAnimation(dropdown_els.moreButton)\r\n        $(dropdown_els.moreButton).on('click', () => {\r\n            const button = dropdown_els.moreButton;\r\n            if (dropdown_els.value.textContent === '0') {\r\n                dropdown_els.lessButton.removeAttribute('disabled');\r\n            }\r\n            dropdown_els.value.textContent = +dropdown_els.value.textContent + 1;\r\n        });\r\n    });\r\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/service-config-dropdown/__service/service-config-dropdown__service.js?");
+
+/***/ }),
+
+/***/ "./src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.js":
+/*!**************************************************************************************************!*\
+  !*** ./src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.js?");
+
+/***/ }),
+
+/***/ "./src/elements/service-config-dropdown/service-config-dropdown.js":
+/*!*************************************************************************!*\
+  !*** ./src/elements/service-config-dropdown/service-config-dropdown.js ***!
+  \*************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _dropdown_services_service_config_dropdown_dropdown_services_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./__dropdown-services/service-config-dropdown__dropdown-services.js */ \"./src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.js\");\n/* harmony import */ var _text_field_service_config_dropdown_text_field_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./__text-field/service-config-dropdown__text-field.js */ \"./src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.js\");\n/* harmony import */ var _text_field_service_config_dropdown_text_field_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_text_field_service_config_dropdown_text_field_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n$(document).ready(() => {\r\n    let namespace = '.service-config-dropdown';\r\n    document.querySelectorAll(namespace).forEach(dd => { //DropDown\r\n        let dd_services = dd.querySelector(namespace + '__dropdown-services');\r\n        $(dd_services).hide(0);\r\n\r\n        dd.querySelector(namespace + '__text-field button').addEventListener('click', e => {\r\n            $(dd_services).slideToggle(1000);\r\n        });\r\n    })\r\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/service-config-dropdown/service-config-dropdown.js?");
+
+/***/ }),
+
 /***/ "./src/elements/subscription-text-field/subscription-text-field.js":
 /*!*************************************************************************!*\
   !*** ./src/elements/subscription-text-field/subscription-text-field.js ***!
   \*************************************************************************/
-/*! exports provided: handleSubscriptionTextFieldButtonsClick */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"handleSubscriptionTextFieldButtonsClick\", function() { return handleSubscriptionTextFieldButtonsClick; });\nfunction handleSubscriptionTextFieldButtonsClick() {\n    $(document).ready(() => {\n        $(\".subscription-text-field button\").each(function () {\n            $(this).on(\"click\", () => {\n                alert('.subscription-text-field button clicked');\n            });\n        });\n    });\n}\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/subscription-text-field/subscription-text-field.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\r\n    function hoverFocusHandler(element, styleTarget) {\r\n        styleTarget.borderChangeFactor = 0;\r\n        $(element).on(\"mouseenter focus\", () => {\r\n            ++styleTarget.borderChangeFactor;\r\n            styleTarget.style.borderColor = \"rgba(31, 32, 65, 0.5)\";\r\n        });\r\n        $(element).on(\"mouseleave blur\", () => {\r\n            --styleTarget.borderChangeFactor;\r\n            if (styleTarget.borderChangeFactor == 0)\r\n                styleTarget.style.borderColor = \"rgba(31, 32, 65, 0.25)\";\r\n        });\r\n    }\r\n    $(\".subscription-text-field\").each(function () { hoverFocusHandler(this, this); })\r\n        .find(\"input\").each(function () { hoverFocusHandler(this, this.parentElement); });\r\n    $(\".subscription-text-field button\").each(function () {\r\n        $(this).on(\"click\", () => {\r\n            alert('.subscription-text-field button clicked');\r\n        });\r\n    });\r\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/subscription-text-field/subscription-text-field.js?");
 
 /***/ }),
 
@@ -235,7 +280,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var Images_arrow_forward_24px_black_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/arrow_forward-24px_black.svg */ \"./src/images/arrow_forward-24px_black.svg\");\n/* harmony import */ var Images_arrow_forward_24px_purple_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/arrow_forward-24px_purple.svg */ \"./src/images/arrow_forward-24px_purple.svg\");\n/* harmony import */ var Images_arrow_back_24px_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/arrow_back-24px.svg */ \"./src/images/arrow_back-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./elements/subscription-text-field/subscription-text-field.js */ \"./src/elements/subscription-text-field/subscription-text-field.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__[\"maskAllMaskedTextFileds\"])();\r\n\r\nObject(_elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__[\"handleSubscriptionTextFieldButtonsClick\"])();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var Images_arrow_forward_24px_black_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/arrow_forward-24px_black.svg */ \"./src/images/arrow_forward-24px_black.svg\");\n/* harmony import */ var Images_arrow_forward_24px_purple_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/arrow_forward-24px_purple.svg */ \"./src/images/arrow_forward-24px_purple.svg\");\n/* harmony import */ var Images_arrow_back_24px_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/arrow_back-24px.svg */ \"./src/images/arrow_back-24px.svg\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/index.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./elements/subscription-text-field/subscription-text-field.js */ \"./src/elements/subscription-text-field/subscription-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _elements_service_config_dropdown_service_config_dropdown_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./elements/service-config-dropdown/service-config-dropdown.js */ \"./src/elements/service-config-dropdown/service-config-dropdown.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_5__[\"maskAllMaskedTextFileds\"])();\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

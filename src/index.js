@@ -5,5 +5,5 @@ import 'Images/arrow_back-24px.svg';
 import "inputmask";
 import { maskAllMaskedTextFileds } from "./elements/masked-text-field/masked-text-field.js";
 maskAllMaskedTextFileds();
-import { handleSubscriptionTextFieldButtonsClick } from './elements/subscription-text-field/subscription-text-field.js';
-handleSubscriptionTextFieldButtonsClick();
+import './elements/subscription-text-field/subscription-text-field.js';
+import './elements/service-config-dropdown/service-config-dropdown.js';

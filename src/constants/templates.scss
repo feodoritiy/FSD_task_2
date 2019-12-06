@@ -1,52 +1,58 @@
 @import '../constants/colors.scss';
+
 $inputSize: 2.75em;
+$inputBorder: 1px solid $darkshade25;
+$inputPaddingLeft: 1.1em;
+$inputBorderRadius: 0.25em;
 
-%basicInputStatic {
-	color: $darkshade75;
-	box-sizing: border-box;
-	border-radius: 0.25em;
-	outline: none;
-}
-
-%basicInput {
-	@extend %basicInputStatic;
-	height: $inputSize;
-	background-color: #ffffff;
-	border: 1px solid $darkshade25;
-	padding-left: 1.1em;
-	font-family: inherit;
-
-	&:hover,
-	&:focus {
-		border-color: $darkshade50;
+@mixin basicInput($disableList) {
+	@if (not index($disableList, 'color')) {
+		color: $darkshade75;
+	}
+	@if (not index($disableList, 'box-sizing')) {
+		box-sizing: border-box;
+	}
+	@if (not index($disableList, 'border-radius')) {
+		border-radius: $inputBorderRadius;
+	}
+	@if (not index($disableList, 'outline')) {
+		outline: none;
+	}
+	@if (not index($disableList, 'height')) {
+		height: $inputSize;
+	}
+	@if (not index($disableList, 'background-color')) {
+		background-color: #ffffff;
+	}
+	@if (not index($disableList, 'border')) {
+		border: $inputBorder;
+	}
+	@if (not index($disableList, 'padding-left')) {
+		padding-left: $inputPaddingLeft;
+	}
+	@if (not index($disableList, 'font-family')) {
+		font-family: inherit;
+	}
+	@if (not index($disableList, 'hover')) {
+		&:hover {
+			border-color: $darkshade50;
+		}
+	}
+	@if (not index($disableList, 'focus')) {
+		&:focus {
+			border-color: $darkshade50;
+		}
 	}
 }
 
-%basicInputNoPadding {
-	@extend %basicInputStatic;
+%basicInputSingleButton {
+	width: $inputSize;
 	height: $inputSize;
-	background-color: #ffffff;
-	border: 1px solid $darkshade25;
-	font-family: inherit;
-
-	&:hover,
-	&:focus {
-		border-color: $darkshade50;
-	}
-}
-
-%basicInputNoBorder {
-	@extend %basicInputStatic;
-	height: $inputSize;
-	background-color: #ffffff;
+	background-color: transparent;
 	border: none;
-	padding-left: 1.1em;
-	font-family: inherit;
-
-	&:hover,
-	&:focus {
-		border-color: $darkshade50;
-	}
+	background-repeat: no-repeat;
+	background-position: center center;
+	outline: none;
 }
 
 %basicDropdown {

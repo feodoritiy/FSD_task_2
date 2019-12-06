@@ -1,3 +1,4 @@
+include ../elements/service-config-dropdown/service-config-dropdown.pug
 include ../elements/text-field/text-field.pug
 include ../elements/dropdown/dropdown.pug
 include ../elements/masked-text-field/masked-text-field.pug
@@ -26,4 +27,6 @@ html(lang="ru")
         +filter-date-dropdown(['19 авг - 23 авг', '15 сен - 16 сен'])
         br
         +subscription-text-field('Email')(style='width: 10em')
+        br
+        +service-config-dropdown(['Спальни', 'Кровати', 'Ванные комнаты'])
         br

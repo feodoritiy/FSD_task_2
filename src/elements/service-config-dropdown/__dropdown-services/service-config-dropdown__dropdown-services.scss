@@ -12,7 +12,7 @@
 		padding-top: 0.25em;
 		padding-left: calc(#{$inputPaddingLeft} - 3px);
 		tbody {
-			@extend %basicInputStatic; //src/constants/templates.scss
+			@include basicInput('height' 'background-color' 'border' 'padding-left' 'font-family' 'hover' 'focus');
 			width: 100%;
 		}
 	}

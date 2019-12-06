@@ -1,12 +1,14 @@
 .subscription-text-field {
-	@extend %basicInputNoPadding;
-	position: relative;
+	@include basicInput('padding-left');
+	display: flex;
+	flex-direction: row;
 	* {
 		box-sizing: border-box;
 	}
 	input {
-		@extend %basicInputNoBorder;
-		width: 100%;
+		@include basicInput('border');
+		border: none;
+		width: calc(100% - #{$inputSize});
 	}
 	button {
 		@extend %basicInputSingleButton;

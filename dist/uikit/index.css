@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:700&display=swap&subset=cyrillic-ext");
-/* line 3, src/constants/types.scss */
+/* line 4, src/constants/types.scss */
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
@@ -7,7 +7,7 @@ h1 {
   font-size: 24px;
   line-height: 30px; }
 
-/* line 11, src/constants/types.scss */
+/* line 12, src/constants/types.scss */
 h2 {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
@@ -15,17 +15,19 @@ h2 {
   font-size: 19px;
   line-height: 24px; }
 
-/* line 19, src/constants/types.scss */
+/* line 20, src/constants/types.scss */
 h3 {
+  margin: auto;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  color: #1f2041;
   /* identical to box height */
   text-transform: uppercase; }
 
-/* line 30, src/constants/types.scss */
+/* line 33, src/constants/types.scss */
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -34,46 +36,25 @@ body {
   line-height: 24px;
   /* or 171% */ }
 
-/* line 4, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field, .subscription-text-field, .subscription-text-field input {
+/* line 7, src/constants/templates.scss */
+.dropdown, select.date-dropdown, .filter-date-dropdown {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
   border-radius: 0.25em;
   outline: none; }
 
-/* line 11, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
+/* line 54, src/constants/templates.scss */
+.dropdown, select.date-dropdown, .filter-date-dropdown {
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 19, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
+  /* line 62, src/constants/templates.scss */
+  .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
-/* line 25, src/constants/templates.scss */
-.subscription-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  font-family: inherit; }
-  /* line 32, src/constants/templates.scss */
-  .subscription-text-field:hover, .subscription-text-field:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 38, src/constants/templates.scss */
-.subscription-text-field input {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 46, src/constants/templates.scss */
-  .subscription-text-field input:hover, .subscription-text-field input:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 52, src/constants/templates.scss */
+/* line 95, src/constants/templates.scss */
 .dropdown, select.date-dropdown, .filter-date-dropdown {
   padding-top: 0;
   padding-bottom: 0;
@@ -86,237 +67,170 @@ input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .maske
   background-repeat: no-repeat;
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
 
-/* line 4, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field, .subscription-text-field, .subscription-text-field input {
+/* line 110, src/constants/templates.scss */
+.subscription-text-field button, .service-config-dropdown__text-field button[type='submit'] {
+  width: 2.75em;
+  height: 2.75em;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none; }
+
+/* line 1, src/elements/text-field/text-field.scss */
+input.text-field {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
   border-radius: 0.25em;
-  outline: none; }
-
-/* line 11, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
+  outline: none;
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 19, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
+  /* line 43, src/constants/templates.scss */
+  input.text-field:hover {
+    border-color: rgba(31, 32, 65, 0.5); }
+  /* line 48, src/constants/templates.scss */
+  input.text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
-/* line 25, src/constants/templates.scss */
-.subscription-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  font-family: inherit; }
-  /* line 32, src/constants/templates.scss */
-  .subscription-text-field:hover, .subscription-text-field:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 38, src/constants/templates.scss */
-.subscription-text-field input {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 46, src/constants/templates.scss */
-  .subscription-text-field input:hover, .subscription-text-field input:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 52, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 2.75em;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  background-image: url(../img/keyboard_arrow_down-24px.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-
-/* line 4, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field, .subscription-text-field, .subscription-text-field input {
+/* line 1, src/elements/masked-text-field/masked-text-field.scss */
+.masked-text-field {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
   border-radius: 0.25em;
-  outline: none; }
-
-/* line 11, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
+  outline: none;
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 19, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
+  /* line 43, src/constants/templates.scss */
+  .masked-text-field:hover {
+    border-color: rgba(31, 32, 65, 0.5); }
+  /* line 48, src/constants/templates.scss */
+  .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
-/* line 25, src/constants/templates.scss */
+/* line 1, src/elements/subscription-text-field/subscription-text-field.scss */
 .subscription-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  font-family: inherit; }
-  /* line 32, src/constants/templates.scss */
-  .subscription-text-field:hover, .subscription-text-field:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 38, src/constants/templates.scss */
-.subscription-text-field input {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 46, src/constants/templates.scss */
-  .subscription-text-field input:hover, .subscription-text-field input:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 52, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 2.75em;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  background-image: url(../img/keyboard_arrow_down-24px.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-
-/* line 4, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field, .subscription-text-field, .subscription-text-field input {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
   border-radius: 0.25em;
-  outline: none; }
-
-/* line 11, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
+  outline: none;
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 19, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row; }
+  /* line 43, src/constants/templates.scss */
+  .subscription-text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 25, src/constants/templates.scss */
-.subscription-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  font-family: inherit; }
-  /* line 32, src/constants/templates.scss */
-  .subscription-text-field:hover, .subscription-text-field:focus {
+  /* line 48, src/constants/templates.scss */
+  .subscription-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 38, src/constants/templates.scss */
-.subscription-text-field input {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 46, src/constants/templates.scss */
-  .subscription-text-field input:hover, .subscription-text-field input:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 52, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 2.75em;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  background-image: url(../img/keyboard_arrow_down-24px.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-
-/* line 4, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field, .subscription-text-field, .subscription-text-field input {
-  color: rgba(31, 32, 65, 0.75);
-  box-sizing: border-box;
-  border-radius: 0.25em;
-  outline: none; }
-
-/* line 11, src/constants/templates.scss */
-input.text-field, .dropdown, select.date-dropdown, .filter-date-dropdown, .masked-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 19, src/constants/templates.scss */
-  input.text-field:hover, .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .masked-text-field:hover, input.text-field:focus, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus, .masked-text-field:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 25, src/constants/templates.scss */
-.subscription-text-field {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  font-family: inherit; }
-  /* line 32, src/constants/templates.scss */
-  .subscription-text-field:hover, .subscription-text-field:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 38, src/constants/templates.scss */
-.subscription-text-field input {
-  height: 2.75em;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 46, src/constants/templates.scss */
-  .subscription-text-field input:hover, .subscription-text-field input:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 52, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 2.75em;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  background-image: url(../img/keyboard_arrow_down-24px.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-
-/* line 2, src/elements/subscription-text-field/subscription-text-field.scss */
-.subscription-text-field {
-  position: relative; }
   /* line 5, src/elements/subscription-text-field/subscription-text-field.scss */
   .subscription-text-field * {
     box-sizing: border-box; }
   /* line 8, src/elements/subscription-text-field/subscription-text-field.scss */
   .subscription-text-field input {
-    width: 100%; }
-  /* line 12, src/elements/subscription-text-field/subscription-text-field.scss */
-  .subscription-text-field button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 2.75em;
+    color: rgba(31, 32, 65, 0.75);
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    outline: none;
     height: 2.75em;
+    background-color: #ffffff;
+    padding-left: 1.1em;
+    font-family: inherit;
     border: none;
-    padding: 0;
-    background-color: transparent;
-    background-image: url(../img/arrow_forward-24px_purple.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: calc(100% - 2.75em); }
+    /* line 43, src/constants/templates.scss */
+    .subscription-text-field input:hover {
+      border-color: rgba(31, 32, 65, 0.5); }
+    /* line 48, src/constants/templates.scss */
+    .subscription-text-field input:focus {
+      border-color: rgba(31, 32, 65, 0.5); }
+  /* line 14, src/elements/subscription-text-field/subscription-text-field.scss */
+  .subscription-text-field button {
+    background-image: url(../img/arrow_forward-24px_purple.svg); }
+
+/* line 2, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+.service-config-dropdown * {
+  box-sizing: border-box; }
+
+/* line 6, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+.service-config-dropdown td {
+  padding: 0; }
+  /* line 9, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+  .service-config-dropdown td.fixed-width {
+    width: 1em; }
+
+/* line 14, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+.service-config-dropdown__service {
+  margin-bottom: 0.5em; }
+  /* line 18, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+  .service-config-dropdown__service .service-config-dropdown__service-less-button, .service-config-dropdown__service .service-config-dropdown__service-more-button {
+    height: 1.875em;
+    width: 1.875em;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 0.5);
+    outline: none;
     cursor: pointer;
-    outline: none; }
+    transition: 0.1s;
+    margin-bottom: 0.25em; }
+    /* line 30, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+    .service-config-dropdown__service .service-config-dropdown__service-less-button[disabled], .service-config-dropdown__service .service-config-dropdown__service-more-button[disabled] {
+      opacity: 0.38; }
+  /* line 37, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+  .service-config-dropdown__service-more-button {
+    margin-right: 0.25em; }
+  /* line 41, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+  .service-config-dropdown__service-button_clicked {
+    transform: scale(0.95, 0.95); }
+  /* line 44, src/elements/service-config-dropdown/__service/service-config-dropdown__service.scss */
+  .service-config-dropdown__service-value {
+    width: 1.875em;
+    text-align: center; }
+
+/* line 2, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+.service-config-dropdown__dropdown-services {
+  border-bottom: 1px solid rgba(31, 32, 65, 0.5);
+  position: absolute;
+  width: inherit; }
+  /* line 7, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+  .service-config-dropdown__dropdown-services table {
+    width: 100%;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0.25em;
+    padding-left: calc(1.1em - 3px); }
+    /* line 14, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+    .service-config-dropdown__dropdown-services table tbody {
+      color: rgba(31, 32, 65, 0.75);
+      box-sizing: border-box;
+      border-radius: 0.25em;
+      outline: none;
+      width: 100%; }
+
+/* line 1, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+.service-config-dropdown__text-field {
+  position: relative;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em; }
+  /* line 6, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+  .service-config-dropdown__text-field input[type='text'] {
+    width: calc(100% - 2.75em); }
+  /* line 10, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+  .service-config-dropdown__text-field button[type='submit'] {
+    background-image: url(../../../images/keyboard_arrow_down-24px.svg); }
+
+/* line 3, src/elements/service-config-dropdown/service-config-dropdown.scss */
+.service-config-dropdown {
+  display: inline-block; }
 
 /*# sourceMappingURL=index.css.map */
