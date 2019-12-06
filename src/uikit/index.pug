@@ -1,3 +1,4 @@
+include ../elements/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../elements/service-config-dropdown/service-config-dropdown.pug
 include ../elements/text-field/text-field.pug
 include ../elements/dropdown/dropdown.pug
@@ -28,10 +29,11 @@ html(lang="ru")
         br
         +subscription-text-field('Email')(style='width: 10em')
         br
-        //-0, 1, 2
+        //-subnames: [for0, for1, for2]
         +service-config-dropdown([
             { name: 'Спальни', subnames: ['Спален', 'Спальня', 'Спальни'] },
             { name: 'Кровати', subnames: ['Кроватей', 'Кровать', 'Кровати'] }, 
             { name: 'Ванные комнаты', subnames: ['Ванных комнат', 'Ванная комната', 'Ванные комнаты'] }
         ])
         br
+        +expandable-checkbox-list(["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь", "Телевизор", "Шампунь"])

@@ -1,3 +1,4 @@
+import './elements/expandable-checkbox-list/expandable-checkbox-list.js';
 import 'Images/keyboard_arrow_down-24px.svg';
 import 'Images/arrow_forward-24px_black.svg';
 import 'Images/arrow_forward-24px_purple.svg';
