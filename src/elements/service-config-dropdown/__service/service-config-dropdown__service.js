@@ -18,6 +18,8 @@ $(document).ready(() => {
             value: $(this).find(service_namespace + '-value')[0],
         };
 
+        dropdown_els.value.onAfterChange = function (dropdownElements) { };
+
         //less button
         if (dropdown_els.value.textContent === '0') {
             dropdown_els.lessButton.setAttribute('disabled', '');
@@ -30,6 +32,7 @@ $(document).ready(() => {
                     button.setAttribute('disabled', '');
                 }
                 dropdown_els.value.textContent = +dropdown_els.value.textContent - 1;
+                dropdown_els.value.onAfterChange(dropdown_els);
             }
         });
 
@@ -41,6 +44,7 @@ $(document).ready(() => {
                 dropdown_els.lessButton.removeAttribute('disabled');
             }
             dropdown_els.value.textContent = +dropdown_els.value.textContent + 1;
+            dropdown_els.value.onAfterChange(dropdown_els);
         });
     });
 });

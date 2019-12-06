@@ -1,11 +1,15 @@
-mixin service-config-dropdown__service(service_name)
+mixin service-config-dropdown__service(service)
 	tr.service-config-dropdown__service&attributes(attributes)
 		td
-			h3= service_name
+			h3= service.name
 		td.fixed-width
 			button.service-config-dropdown__service-button.service-config-dropdown__service-less-button -
 		td.fixed-width
-			h3.service-config-dropdown__service-value 0
+			h3.service-config-dropdown__service-value(
+				data-service-for0=service.subnames[0], 
+				data-service-for1=service.subnames[1],
+				data-service-for2=service.subnames[2]
+			) 0
 		td.fixed-width
 			button.service-config-dropdown__service-button.service-config-dropdown__service-more-button +
 		
