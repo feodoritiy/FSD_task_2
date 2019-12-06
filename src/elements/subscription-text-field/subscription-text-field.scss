@@ -1,6 +1,6 @@
 .subscription-text-field {
 	@include basicInput('padding-left');
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	* {
 		box-sizing: border-box;

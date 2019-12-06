@@ -56,7 +56,7 @@ $inputBorderRadius: 0.25em;
 }
 
 %basicDropdown {
-	@extend %basicInput;
+	@include basicInput('');
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-right: $inputSize;

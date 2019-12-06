@@ -36,26 +36,27 @@ body {
   line-height: 24px;
   /* or 171% */ }
 
-/* line 7, src/constants/templates.scss */
+/* line 48, src/constants/templates.scss */
+.subscription-text-field button, .service-config-dropdown__text-field button[type='submit'] {
+  width: 2.75em;
+  height: 2.75em;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none; }
+
+/* line 58, src/constants/templates.scss */
 .dropdown, select.date-dropdown, .filter-date-dropdown {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
   border-radius: 0.25em;
-  outline: none; }
-
-/* line 54, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
+  outline: none;
   height: 2.75em;
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
-  font-family: inherit; }
-  /* line 62, src/constants/templates.scss */
-  .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover, .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus {
-    border-color: rgba(31, 32, 65, 0.5); }
-
-/* line 95, src/constants/templates.scss */
-.dropdown, select.date-dropdown, .filter-date-dropdown {
+  font-family: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 2.75em;
@@ -66,16 +67,12 @@ body {
   background-image: url(../img/keyboard_arrow_down-24px.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-
-/* line 110, src/constants/templates.scss */
-.subscription-text-field button, .service-config-dropdown__text-field button[type='submit'] {
-  width: 2.75em;
-  height: 2.75em;
-  background-color: transparent;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  outline: none; }
+  /* line 37, src/constants/templates.scss */
+  .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover {
+    border-color: rgba(31, 32, 65, 0.5); }
+  /* line 42, src/constants/templates.scss */
+  .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus {
+    border-color: rgba(31, 32, 65, 0.5); }
 
 /* line 1, src/elements/text-field/text-field.scss */
 input.text-field {
@@ -88,10 +85,10 @@ input.text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 43, src/constants/templates.scss */
+  /* line 37, src/constants/templates.scss */
   input.text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 48, src/constants/templates.scss */
+  /* line 42, src/constants/templates.scss */
   input.text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
@@ -106,10 +103,10 @@ input.text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 43, src/constants/templates.scss */
+  /* line 37, src/constants/templates.scss */
   .masked-text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 48, src/constants/templates.scss */
+  /* line 42, src/constants/templates.scss */
   .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
@@ -123,12 +120,12 @@ input.text-field {
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   font-family: inherit;
-  display: flex;
+  display: inline-flex;
   flex-direction: row; }
-  /* line 43, src/constants/templates.scss */
+  /* line 37, src/constants/templates.scss */
   .subscription-text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 48, src/constants/templates.scss */
+  /* line 42, src/constants/templates.scss */
   .subscription-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
   /* line 5, src/elements/subscription-text-field/subscription-text-field.scss */
@@ -146,13 +143,13 @@ input.text-field {
     font-family: inherit;
     border: none;
     width: calc(100% - 2.75em); }
-    /* line 43, src/constants/templates.scss */
+    /* line 37, src/constants/templates.scss */
     .subscription-text-field input:hover {
       border-color: rgba(31, 32, 65, 0.5); }
-    /* line 48, src/constants/templates.scss */
+    /* line 42, src/constants/templates.scss */
     .subscription-text-field input:focus {
       border-color: rgba(31, 32, 65, 0.5); }
-  /* line 14, src/elements/subscription-text-field/subscription-text-field.scss */
+  /* line 13, src/elements/subscription-text-field/subscription-text-field.scss */
   .subscription-text-field button {
     background-image: url(../img/arrow_forward-24px_purple.svg); }
 
