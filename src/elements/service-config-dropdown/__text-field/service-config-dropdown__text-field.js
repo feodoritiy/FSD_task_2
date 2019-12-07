@@ -1,6 +1,13 @@
 $(document).ready(() => {
     let namespace = '.service-config-dropdown';
 
+    $(namespace + '__text-field input').on('click', e => {
+        let el = $(namespace + '__dropdown-services');
+        el[0].previousElementSibling.style.borderColor = "rgba(31, 32, 65, 0.5)";
+        el[0].isOpened = true;
+        el.slideDown(1000);
+    });
+
     let outputTextField = $(namespace + '__text-field input')[0];
     console.log(outputTextField);
     outputTextField.services = []; //[{names:[],value}, {names:[],value}]
@@ -34,6 +41,8 @@ $(document).ready(() => {
     outputTextField.render = function () {
         let servicesStrings = [];
 
+        this.services.sort((a, b) => a.index - b.index);
+
         this.services.forEach((service, index) => {
             let serviceValueStr = service.value.toString();
             let serviceSelectedName;
@@ -58,9 +67,10 @@ $(document).ready(() => {
     $(namespace).each(function () {
         let namespaceParent = this;
 
-        $(namespace + '__service-value', namespaceParent).each(function () {
+        $(namespace + '__service-value', namespaceParent).each(function (index) {
             this.onAfterChange = (dropdownElements) => {
                 let service = {
+                    index: index + 1, //to exclude 0 index error
                     names: [
                         dropdownElements.value.dataset.serviceFor0,
                         dropdownElements.value.dataset.serviceFor1,

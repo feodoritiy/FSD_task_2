@@ -31,12 +31,4 @@ $(document).ready(() => {
             $(ddServices).slideToggle(1000);
         });
     })
-
-    $(".subscription-text-field").each(function () { hoverFocusHandler(this, this); })
-        .find("input").each(function () { hoverFocusHandler(this, this.parentElement); });
-    $(".subscription-text-field button").each(function () {
-        $(this).on("click", () => {
-            alert('.subscription-text-field button clicked');
-        });
-    });
 });
