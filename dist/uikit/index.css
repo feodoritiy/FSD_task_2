@@ -195,18 +195,17 @@ input.text-field {
 
 /* line 2, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
 .service-config-dropdown__dropdown-services {
-  border-bottom: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: 0;
+  border-radius: 0 0 0.25em 0.25em;
   position: absolute;
   width: 100%; }
-  /* line 7, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+  /* line 9, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
   .service-config-dropdown__dropdown-services table {
     width: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    border-top: none;
-    border-bottom: none;
     padding-top: 0.25em;
-    padding-left: calc(1.1em - 3px); }
-    /* line 14, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+    padding-left: calc(1.1em); }
+    /* line 13, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
     .service-config-dropdown__dropdown-services table tbody {
       color: rgba(31, 32, 65, 0.75);
       box-sizing: border-box;
