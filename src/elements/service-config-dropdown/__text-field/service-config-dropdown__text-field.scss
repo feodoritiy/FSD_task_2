@@ -5,7 +5,8 @@
 	border-top-right-radius: $inputBorderRadius;
 	display: flex;
 	input[type='text'] {
-		@include basicInput('border' 'padding-left');
+		@include basicInput('border' 'padding-left' 'background-color');
+		background-color: transparent;
 		text-overflow: ellipsis;
 		border: none;
 		width: calc(100% - #{$inputSize});

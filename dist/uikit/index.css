@@ -138,10 +138,10 @@ input.text-field {
     border-radius: 0.25em;
     outline: none;
     height: 2.75em;
-    background-color: #ffffff;
     padding-left: 1.1em;
     font-family: inherit;
     border: none;
+    background-color: transparent;
     width: calc(100% - 2.75em); }
     /* line 37, src/constants/templates.scss */
     .subscription-text-field input:hover {
@@ -149,7 +149,7 @@ input.text-field {
     /* line 42, src/constants/templates.scss */
     .subscription-text-field input:focus {
       border-color: rgba(31, 32, 65, 0.5); }
-  /* line 13, src/elements/subscription-text-field/subscription-text-field.scss */
+  /* line 14, src/elements/subscription-text-field/subscription-text-field.scss */
   .subscription-text-field button {
     background-image: url(../img/arrow_forward-24px_purple.svg); }
 
@@ -240,8 +240,8 @@ input.text-field {
     border-radius: 0.25em;
     outline: none;
     height: 2.75em;
-    background-color: #ffffff;
     font-family: inherit;
+    background-color: transparent;
     text-overflow: ellipsis;
     border: none;
     width: calc(100% - 2.75em); }
@@ -251,7 +251,7 @@ input.text-field {
     /* line 42, src/constants/templates.scss */
     .service-config-dropdown__text-field input[type='text']:focus {
       border-color: rgba(31, 32, 65, 0.5); }
-  /* line 13, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+  /* line 14, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
   .service-config-dropdown__text-field button[type='submit'] {
     background-image: url(../img/keyboard_arrow_down-24px.svg); }
 

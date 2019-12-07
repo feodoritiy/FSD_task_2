@@ -6,8 +6,9 @@
 		box-sizing: border-box;
 	}
 	input {
-		@include basicInput('border');
+		@include basicInput('border' 'background-color');
 		border: none;
+		background-color: transparent;
 		width: calc(100% - #{$inputSize});
 	}
 	button {
