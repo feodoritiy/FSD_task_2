@@ -74,6 +74,96 @@ body {
   .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
+/* line 1, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+.expandable-checkbox-list {
+  width: auto;
+  position: relative; }
+  /* line 9, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list * {
+    box-sizing: border-box; }
+  /* line 13, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list__header {
+    color: rgba(31, 32, 65, 0.75);
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    outline: none;
+    height: 2.75em;
+    background-color: #ffffff;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    /* line 37, src/constants/templates.scss */
+    .expandable-checkbox-list__header:hover {
+      border-color: rgba(31, 32, 65, 0.5); }
+    /* line 42, src/constants/templates.scss */
+    .expandable-checkbox-list__header:focus {
+      border-color: rgba(31, 32, 65, 0.5); }
+  /* line 19, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list__title {
+    margin: 0; }
+  /* line 22, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list__toggle-button {
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/keyboard_arrow_down-24px.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 2.75em;
+    height: 100%;
+    outline: none;
+    transition: 1s ease-in-out; }
+    /* line 33, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    .expandable-checkbox-list__toggle-button_opened {
+      transform: rotate(180deg); }
+  /* line 38, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list__checkboxes {
+    width: 100%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    background-color: white; }
+  /* line 45, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  .expandable-checkbox-list__checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1.25em;
+    margin-bottom: 0.625em; }
+    /* line 52, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    .expandable-checkbox-list__checkbox input[type='checkbox'] {
+      color: rgba(31, 32, 65, 0.75);
+      box-sizing: border-box;
+      border-radius: 0.25em;
+      outline: none;
+      background-color: #ffffff;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      font-family: inherit;
+      margin: 0;
+      margin-right: 0.625em;
+      padding: 0;
+      height: 100%;
+      width: 1.25em;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      vertical-align: text-top; }
+      /* line 37, src/constants/templates.scss */
+      .expandable-checkbox-list__checkbox input[type='checkbox']:hover {
+        border-color: rgba(31, 32, 65, 0.5); }
+      /* line 66, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+      .expandable-checkbox-list__checkbox input[type='checkbox']:checked {
+        border-color: #bc9cff;
+        background-image: url("../img/checkbox-checked.svg");
+        background-position: center 30%;
+        background-repeat: no-repeat;
+        background-size: 65%; }
+    /* line 75, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    .expandable-checkbox-list__checkbox label {
+      color: rgba(31, 32, 65, 0.5); }
+
 /* line 1, src/elements/text-field/text-field.scss */
 input.text-field {
   color: rgba(31, 32, 65, 0.75);
@@ -199,13 +289,15 @@ input.text-field {
   border-top: 0;
   border-radius: 0 0 0.25em 0.25em;
   position: absolute;
+  z-index: 2;
+  background-color: white;
   width: 100%; }
-  /* line 9, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+  /* line 11, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
   .service-config-dropdown__dropdown-services table {
     width: 100%;
     padding-top: 0.25em;
     padding-left: calc(1.1em); }
-    /* line 13, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+    /* line 15, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
     .service-config-dropdown__dropdown-services table tbody {
       color: rgba(31, 32, 65, 0.75);
       box-sizing: border-box;

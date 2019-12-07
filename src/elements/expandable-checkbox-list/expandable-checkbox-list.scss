@@ -1,3 +1,79 @@
 .expandable-checkbox-list {
-	
+	$blockSize: 1.25em;
+	$spaceSize: $blockSize / 2;
+	$checkedBorderColor: #bc9cff;
+
+	width: auto;
+	position: relative;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	&__header {
+		@include basicInput('border' 'padding-left');
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title {
+		margin: 0;
+	}
+	&__toggle-button {
+		background-color: transparent;
+		border: none;
+		background-image: url('../img/keyboard_arrow_down-24px.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: $inputSize;
+		height: 100%;
+		outline: none;
+		transition: 1s ease-in-out;
+
+		&_opened {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__checkboxes {
+		width: 100%;
+		position: absolute;
+		display: none;
+		z-index: 2;
+		background-color: white;
+	}
+	&__checkbox {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: $blockSize;
+		margin-bottom: $spaceSize;
+
+		input[type='checkbox'] {
+			@include basicInput('height' 'padding-left' 'focus');
+			margin: 0;
+			margin-right: $spaceSize;
+			padding: 0;
+			height: 100%;
+			width: $blockSize;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-ms-appearance: none;
+			-o-appearance: none;
+			appearance: none;
+			vertical-align: text-top;
+
+			&:checked {
+				border-color: $checkedBorderColor;
+				background-image: url('../img/checkbox-checked.svg');
+				background-position: center 30%;
+				background-repeat: no-repeat;
+				background-size: 65%;
+			}
+		}
+
+		label {
+			color: $darkshade50;
+		}
+	}
 }

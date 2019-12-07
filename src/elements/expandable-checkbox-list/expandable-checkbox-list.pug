@@ -1,4 +1,10 @@
-mixin expandable-checkbox-list()
+mixin expandable-checkbox-list(title, checkboxes)
 	.expandable-checkbox-list&attributes(attributes)
-		if block
-			block
+		.expandable-checkbox-list__header
+			h3.expandable-checkbox-list__title= title
+			button.expandable-checkbox-list__toggle-button
+		.expandable-checkbox-list__checkboxes
+			each check_name in checkboxes
+				.expandable-checkbox-list__checkbox
+					input(type="checkbox", id=check_name, name=check_name)
+					label= check_name
