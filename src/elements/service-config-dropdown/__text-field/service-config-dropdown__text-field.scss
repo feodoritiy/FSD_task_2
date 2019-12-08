@@ -4,16 +4,19 @@
 	border-top-left-radius: $inputBorderRadius;
 	border-top-right-radius: $inputBorderRadius;
 	display: flex;
+	cursor: pointer;
 	input[type='text'] {
 		@include basicInput('border' 'padding-left' 'background-color');
 		background-color: transparent;
 		text-overflow: ellipsis;
 		border: none;
 		width: calc(100% - #{$inputSize});
+		cursor: pointer;
 	}
 	button[type='submit'] {
 		@extend %basicInputSingleButton;
 		background-image: url(../img/keyboard_arrow_down-24px.svg);
+		cursor: pointer;
 		// background-image: url(../../../images/keyboard_arrow_down-24px.svg);
 	}
 }
