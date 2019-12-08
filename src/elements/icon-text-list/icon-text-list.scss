@@ -1,0 +1,47 @@
+.icon-text-list {
+	$blockSize: calc(3em + 1em + 1em);
+
+	* {
+		box-sizing: border-box;
+	}
+
+	&__part {
+		display: flex;
+		flex-direction: row;
+		height: $blockSize;
+		margin-bottom: 0.5em;
+		border-bottom: 1px solid $darkshade10;
+		padding: 1em 0;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&-icon {
+			height: 100%;
+			margin: -0.2em 0.625em 0 0.3125em;
+			width: 3em;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			text-align: left;
+		}
+		&-title {
+			@extend %textH3;
+			color: $darkshade75;
+			text-transform: capitalize;
+			margin: 0;
+			font-size: 14px;
+		}
+		&-text {
+			color: $darkshade75;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+mixin icon-text-list(listConfig)
+	.icon-text-list&attributes(attributes)
+		each listPartConf in listConfig
+			.icon-text-list__part
+				.icon-text-list__part-icon
+					img(src=listPartConf.icon.src, alt=listPartConf.icon.alt)
+				.icon-text-list__part-content
+					.icon-text-list__part-title= listPartConf.title
+					.icon-text-list__part-text= listPartConf.text

@@ -16,7 +16,7 @@ h2 {
   line-height: 24px; }
 
 /* line 20, src/constants/types.scss */
-h3 {
+.icon-text-list__part-title, h3 {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -92,17 +92,18 @@ body {
     font-family: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    cursor: pointer; }
     /* line 37, src/constants/templates.scss */
     .expandable-checkbox-list__header:hover {
       border-color: rgba(31, 32, 65, 0.5); }
     /* line 42, src/constants/templates.scss */
     .expandable-checkbox-list__header:focus {
       border-color: rgba(31, 32, 65, 0.5); }
-  /* line 19, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  /* line 20, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
   .expandable-checkbox-list__title {
     margin: 0; }
-  /* line 22, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  /* line 23, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
   .expandable-checkbox-list__toggle-button {
     background-color: transparent;
     border: none;
@@ -112,25 +113,26 @@ body {
     width: 2.75em;
     height: 100%;
     outline: none;
-    transition: 1s ease-in-out; }
-    /* line 33, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    transition: 1s ease-in-out;
+    cursor: pointer; }
+    /* line 35, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
     .expandable-checkbox-list__toggle-button_opened {
       transform: rotate(180deg); }
-  /* line 38, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  /* line 40, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
   .expandable-checkbox-list__checkboxes {
     width: 100%;
     position: absolute;
     display: none;
     z-index: 2;
     background-color: white; }
-  /* line 45, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+  /* line 47, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
   .expandable-checkbox-list__checkbox {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 1.25em;
     margin-bottom: 0.625em; }
-    /* line 52, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    /* line 54, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
     .expandable-checkbox-list__checkbox input[type='checkbox'] {
       color: rgba(31, 32, 65, 0.75);
       box-sizing: border-box;
@@ -149,20 +151,22 @@ body {
       -ms-appearance: none;
       -o-appearance: none;
       appearance: none;
-      vertical-align: text-top; }
+      vertical-align: text-top;
+      cursor: pointer; }
       /* line 37, src/constants/templates.scss */
       .expandable-checkbox-list__checkbox input[type='checkbox']:hover {
         border-color: rgba(31, 32, 65, 0.5); }
-      /* line 66, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+      /* line 69, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
       .expandable-checkbox-list__checkbox input[type='checkbox']:checked {
         border-color: #bc9cff;
         background-image: url("../img/checkbox-checked.svg");
         background-position: center 30%;
         background-repeat: no-repeat;
         background-size: 65%; }
-    /* line 75, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
+    /* line 78, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
     .expandable-checkbox-list__checkbox label {
-      color: rgba(31, 32, 65, 0.5); }
+      color: rgba(31, 32, 65, 0.5);
+      cursor: pointer; }
 
 /* line 1, src/elements/text-field/text-field.scss */
 input.text-field {
@@ -318,14 +322,15 @@ input.text-field {
   position: relative;
   border-top-left-radius: 0.25em;
   border-top-right-radius: 0.25em;
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
   /* line 37, src/constants/templates.scss */
   .service-config-dropdown__text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
   /* line 42, src/constants/templates.scss */
   .service-config-dropdown__text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 7, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+  /* line 8, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
   .service-config-dropdown__text-field input[type='text'] {
     color: rgba(31, 32, 65, 0.75);
     box-sizing: border-box;
@@ -336,20 +341,63 @@ input.text-field {
     background-color: transparent;
     text-overflow: ellipsis;
     border: none;
-    width: calc(100% - 2.75em); }
+    width: calc(100% - 2.75em);
+    cursor: pointer; }
     /* line 37, src/constants/templates.scss */
     .service-config-dropdown__text-field input[type='text']:hover {
       border-color: rgba(31, 32, 65, 0.5); }
     /* line 42, src/constants/templates.scss */
     .service-config-dropdown__text-field input[type='text']:focus {
       border-color: rgba(31, 32, 65, 0.5); }
-  /* line 14, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
+  /* line 16, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
   .service-config-dropdown__text-field button[type='submit'] {
-    background-image: url(../img/keyboard_arrow_down-24px.svg); }
+    background-image: url(../img/keyboard_arrow_down-24px.svg);
+    cursor: pointer; }
 
 /* line 3, src/elements/service-config-dropdown/service-config-dropdown.scss */
 .service-config-dropdown {
   display: inline-block;
   position: relative; }
+
+/* line 4, src/elements/icon-text-list/icon-text-list.scss */
+.icon-text-list * {
+  box-sizing: border-box; }
+
+/* line 8, src/elements/icon-text-list/icon-text-list.scss */
+.icon-text-list__part {
+  display: flex;
+  flex-direction: row;
+  height: calc(3em + 1em + 1em);
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  padding: 1em 0; }
+  /* line 16, src/elements/icon-text-list/icon-text-list.scss */
+  .icon-text-list__part:last-of-type {
+    margin-bottom: 0; }
+  /* line 19, src/elements/icon-text-list/icon-text-list.scss */
+  .icon-text-list__part-icon {
+    height: 100%;
+    margin: -0.2em 0.625em 0 0.3125em;
+    width: 3em; }
+    /* line 24, src/elements/icon-text-list/icon-text-list.scss */
+    .icon-text-list__part-icon img {
+      width: 100%;
+      height: 100%; }
+  /* line 29, src/elements/icon-text-list/icon-text-list.scss */
+  .icon-text-list__part-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left; }
+  /* line 36, src/elements/icon-text-list/icon-text-list.scss */
+  .icon-text-list__part-title {
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 14px; }
+  /* line 43, src/elements/icon-text-list/icon-text-list.scss */
+  .icon-text-list__part-text {
+    color: rgba(31, 32, 65, 0.75); }
 
 /*# sourceMappingURL=index.css.map */

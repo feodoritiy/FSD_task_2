@@ -6,6 +6,7 @@ include ../elements/masked-text-field/masked-text-field.pug
 include ../elements/date-dropdown/date-dropdown.pug
 include ../elements/filter-date-dropdown/filter-date-dropdown.pug
 include ../elements/subscription-text-field/subscription-text-field.pug
+include ../elements/icon-text-list/icon-text-list.pug
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -49,3 +50,22 @@ html(lang="ru")
                 "Шампунь"
             ]
         )(style="width: 20em")
+        br
+        +icon-text-list([
+            {
+                icon: {
+                    src: '../img/insert_emoticon.svg',
+                    alt: 'Улыбка',
+                },
+                title: 'Комфорт',
+                text: 'Шумопоглащающие стены',
+            },
+            {
+                icon: {
+                    src: '../img/location_city.svg',
+                    alt: 'Здание',
+                },
+                title: 'Удобство',
+                text: 'Окно в каждой из спален',
+            }
+        ])(style="width: 20em")

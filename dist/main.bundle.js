@@ -162,7 +162,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\n    let namespace = '.expandable-checkbox-list';\n    $(namespace + '__checkbox label').each(function () {\n        $(this).click(e => {\n            if (e.target.previousElementSibling.hasAttribute('checked')) {\n                e.target.previousElementSibling.removeAttribute('checked');\n            } else {\n                e.target.previousElementSibling.setAttribute('checked', '');\n            }\n        });\n    });\n\n    $(namespace + '__toggle-button').each(function () {\n        this.isOpened = false;\n        $(this).click(e => {\n            if (!this.isOpened) {\n                this.classList.add(namespace.slice(1) + '__toggle-button_opened');\n            } else {\n                this.classList.remove(namespace.slice(1) + '__toggle-button_opened');\n            }\n            this.isOpened = !this.isOpened;\n            $(this.parentElement.nextElementSibling).slideToggle(1000);\n        });\n    });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/expandable-checkbox-list/expandable-checkbox-list.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\r\n    let namespace = '.expandable-checkbox-list';\r\n    $(namespace + '__checkbox label').each(function () {\r\n        $(this).click(e => {\r\n            if (e.target.previousElementSibling.hasAttribute('checked')) {\r\n                e.target.previousElementSibling.removeAttribute('checked');\r\n            } else {\r\n                e.target.previousElementSibling.setAttribute('checked', '');\r\n            }\r\n        });\r\n    });\r\n\r\n    $(namespace + '__header').each(function () {\r\n        let button = this.lastElementChild;\r\n        button.isOpened = false;\r\n        $(this).click(e => {\r\n            if (!button.isOpened) {\r\n                button.classList.add(namespace.slice(1) + '__toggle-button_opened');\r\n            } else {\r\n                button.classList.remove(namespace.slice(1) + '__toggle-button_opened');\r\n            }\r\n            button.isOpened = !button.isOpened;\r\n            $(button.parentElement.nextElementSibling).slideToggle(1000);\r\n        });\r\n    });\r\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/expandable-checkbox-list/expandable-checkbox-list.js?");
 
 /***/ }),
 
@@ -283,6 +283,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/images/insert_emoticon.svg":
+/*!****************************************!*\
+  !*** ./src/images/insert_emoticon.svg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/insert_emoticon.svg\");\n\n//# sourceURL=webpack:///./src/images/insert_emoticon.svg?");
+
+/***/ }),
+
 /***/ "./src/images/keyboard_arrow_down-24px.svg":
 /*!*************************************************!*\
   !*** ./src/images/keyboard_arrow_down-24px.svg ***!
@@ -295,6 +307,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/images/location_city.svg":
+/*!**************************************!*\
+  !*** ./src/images/location_city.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/location_city.svg\");\n\n//# sourceURL=webpack:///./src/images/location_city.svg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -303,7 +327,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var Images_arrow_forward_24px_black_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/arrow_forward-24px_black.svg */ \"./src/images/arrow_forward-24px_black.svg\");\n/* harmony import */ var Images_arrow_forward_24px_purple_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/arrow_forward-24px_purple.svg */ \"./src/images/arrow_forward-24px_purple.svg\");\n/* harmony import */ var Images_arrow_back_24px_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/arrow_back-24px.svg */ \"./src/images/arrow_back-24px.svg\");\n/* harmony import */ var Images_checkbox_checked_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Images/checkbox-checked.svg */ \"./src/images/checkbox-checked.svg\");\n/* harmony import */ var _elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./elements/expandable-checkbox-list/expandable-checkbox-list.js */ \"./src/elements/expandable-checkbox-list/expandable-checkbox-list.js\");\n/* harmony import */ var _elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./elements/subscription-text-field/subscription-text-field.js */ \"./src/elements/subscription-text-field/subscription-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _elements_service_config_dropdown_service_config_dropdown_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./elements/service-config-dropdown/service-config-dropdown.js */ \"./src/elements/service-config-dropdown/service-config-dropdown.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Images_keyboard_arrow_down_24px_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Images/keyboard_arrow_down-24px.svg */ \"./src/images/keyboard_arrow_down-24px.svg\");\n/* harmony import */ var Images_arrow_forward_24px_black_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/arrow_forward-24px_black.svg */ \"./src/images/arrow_forward-24px_black.svg\");\n/* harmony import */ var Images_arrow_forward_24px_purple_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/arrow_forward-24px_purple.svg */ \"./src/images/arrow_forward-24px_purple.svg\");\n/* harmony import */ var Images_arrow_back_24px_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/arrow_back-24px.svg */ \"./src/images/arrow_back-24px.svg\");\n/* harmony import */ var Images_checkbox_checked_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Images/checkbox-checked.svg */ \"./src/images/checkbox-checked.svg\");\n/* harmony import */ var Images_insert_emoticon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Images/insert_emoticon.svg */ \"./src/images/insert_emoticon.svg\");\n/* harmony import */ var Images_location_city_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Images/location_city.svg */ \"./src/images/location_city.svg\");\n/* harmony import */ var _elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./elements/expandable-checkbox-list/expandable-checkbox-list.js */ \"./src/elements/expandable-checkbox-list/expandable-checkbox-list.js\");\n/* harmony import */ var _elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_elements_expandable_checkbox_list_expandable_checkbox_list_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _elements_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./elements/masked-text-field/masked-text-field.js */ \"./src/elements/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./elements/subscription-text-field/subscription-text-field.js */ \"./src/elements/subscription-text-field/subscription-text-field.js\");\n/* harmony import */ var _elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_elements_subscription_text_field_subscription_text_field_js__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _elements_service_config_dropdown_service_config_dropdown_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./elements/service-config-dropdown/service-config-dropdown.js */ \"./src/elements/service-config-dropdown/service-config-dropdown.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

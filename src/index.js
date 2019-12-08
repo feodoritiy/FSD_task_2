@@ -3,6 +3,8 @@ import 'Images/arrow_forward-24px_black.svg';
 import 'Images/arrow_forward-24px_purple.svg';
 import 'Images/arrow_back-24px.svg';
 import 'Images/checkbox-checked.svg';
+import 'Images/insert_emoticon.svg';
+import 'Images/location_city.svg';
 import './elements/expandable-checkbox-list/expandable-checkbox-list.js';
 import "./elements/masked-text-field/masked-text-field.js";
 import './elements/subscription-text-field/subscription-text-field.js';
