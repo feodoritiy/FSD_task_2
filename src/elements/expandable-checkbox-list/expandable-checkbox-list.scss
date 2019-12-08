@@ -15,6 +15,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		cursor: pointer;
 	}
 	&__title {
 		margin: 0;
@@ -29,6 +30,7 @@
 		height: 100%;
 		outline: none;
 		transition: 1s ease-in-out;
+		cursor: pointer;
 
 		&_opened {
 			transform: rotate(180deg);
@@ -62,6 +64,7 @@
 			-o-appearance: none;
 			appearance: none;
 			vertical-align: text-top;
+			cursor: pointer;
 
 			&:checked {
 				border-color: $checkedBorderColor;
@@ -74,6 +77,7 @@
 
 		label {
 			color: $darkshade50;
+			cursor: pointer;
 		}
 	}
 }
