@@ -5,6 +5,5 @@ mixin expandable-checkbox-list(title, checkboxes)
 			button.expandable-checkbox-list__toggle-button
 		.expandable-checkbox-list__checkboxes
 			each check_name in checkboxes
-				.expandable-checkbox-list__checkbox
-					input(type="checkbox", id=check_name, name=check_name)
-					label= check_name
+				+checkbox(check_name).expandable-checkbox-list__checkbox
+					

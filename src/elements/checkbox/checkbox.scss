@@ -1,0 +1,40 @@
+.checkbox {
+	$blockSize: 1.25em;
+	$spaceSize: $blockSize / 2;
+	$checkedBorderColor: #bc9cff;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: $blockSize;
+	margin-bottom: $spaceSize;
+
+	input[type='checkbox'] {
+		@include basicInput('height' 'padding-left' 'focus');
+		margin: 0;
+		margin-right: $spaceSize;
+		padding: 0;
+		height: 100%;
+		width: $blockSize;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		vertical-align: text-top;
+		cursor: pointer;
+
+		&:checked {
+			border-color: $checkedBorderColor;
+			background-image: url('../img/checkbox-checked.svg');
+			background-position: center 30%;
+			background-repeat: no-repeat;
+			background-size: 65%;
+		}
+	}
+
+	label {
+		color: $darkshade50;
+		cursor: pointer;
+	}
+}

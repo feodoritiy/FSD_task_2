@@ -1,14 +1,5 @@
 $(document).ready(() => {
     let namespace = '.expandable-checkbox-list';
-    $(namespace + '__checkbox label').each(function () {
-        $(this).click(e => {
-            if (e.target.previousElementSibling.hasAttribute('checked')) {
-                e.target.previousElementSibling.removeAttribute('checked');
-            } else {
-                e.target.previousElementSibling.setAttribute('checked', '');
-            }
-        });
-    });
 
     $(namespace + '__header').each(function () {
         let button = this.lastElementChild;
