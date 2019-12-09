@@ -36,7 +36,7 @@ body {
   line-height: 24px;
   /* or 171% */ }
 
-/* line 48, src/constants/templates.scss */
+/* line 50, src/constants/templates.scss */
 .subscription-text-field button, .service-config-dropdown__text-field button[type='submit'] {
   width: 2.75em;
   height: 2.75em;
@@ -46,7 +46,7 @@ body {
   background-position: center center;
   outline: none; }
 
-/* line 58, src/constants/templates.scss */
+/* line 60, src/constants/templates.scss */
 .dropdown, select.date-dropdown, .filter-date-dropdown {
   color: rgba(31, 32, 65, 0.75);
   box-sizing: border-box;
@@ -67,12 +67,55 @@ body {
   background-image: url(../img/keyboard_arrow_down-24px.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 2.75em / 2 + 0.925em) center; }
-  /* line 37, src/constants/templates.scss */
+  /* line 39, src/constants/templates.scss */
   .dropdown:hover, select.date-dropdown:hover, .filter-date-dropdown:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 42, src/constants/templates.scss */
+  /* line 44, src/constants/templates.scss */
   .dropdown:focus, select.date-dropdown:focus, .filter-date-dropdown:focus {
     border-color: rgba(31, 32, 65, 0.5); }
+
+/* line 1, src/elements/checkbox/checkbox.scss */
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.25em;
+  margin-bottom: 0.625em; }
+  /* line 12, src/elements/checkbox/checkbox.scss */
+  .checkbox input[type='checkbox'] {
+    color: rgba(31, 32, 65, 0.75);
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: inherit;
+    margin: 0;
+    margin-right: 0.625em;
+    padding: 0;
+    height: 100%;
+    width: 1.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    vertical-align: text-top;
+    cursor: pointer; }
+    /* line 39, src/constants/templates.scss */
+    .checkbox input[type='checkbox']:hover {
+      border-color: rgba(31, 32, 65, 0.5); }
+    /* line 27, src/elements/checkbox/checkbox.scss */
+    .checkbox input[type='checkbox']:checked {
+      border-color: #bc9cff;
+      background-image: url("../img/checkbox-checked.svg");
+      background-position: center 30%;
+      background-repeat: no-repeat;
+      background-size: 65%; }
+  /* line 36, src/elements/checkbox/checkbox.scss */
+  .checkbox label {
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer; }
 
 /* line 1, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
 .expandable-checkbox-list {
@@ -94,10 +137,10 @@ body {
     align-items: center;
     justify-content: space-between;
     cursor: pointer; }
-    /* line 37, src/constants/templates.scss */
+    /* line 39, src/constants/templates.scss */
     .expandable-checkbox-list__header:hover {
       border-color: rgba(31, 32, 65, 0.5); }
-    /* line 42, src/constants/templates.scss */
+    /* line 44, src/constants/templates.scss */
     .expandable-checkbox-list__header:focus {
       border-color: rgba(31, 32, 65, 0.5); }
   /* line 20, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
@@ -125,48 +168,6 @@ body {
     display: none;
     z-index: 2;
     background-color: white; }
-  /* line 47, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
-  .expandable-checkbox-list__checkbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 1.25em;
-    margin-bottom: 0.625em; }
-    /* line 54, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
-    .expandable-checkbox-list__checkbox input[type='checkbox'] {
-      color: rgba(31, 32, 65, 0.75);
-      box-sizing: border-box;
-      border-radius: 0.25em;
-      outline: none;
-      background-color: #ffffff;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      font-family: inherit;
-      margin: 0;
-      margin-right: 0.625em;
-      padding: 0;
-      height: 100%;
-      width: 1.25em;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      -o-appearance: none;
-      appearance: none;
-      vertical-align: text-top;
-      cursor: pointer; }
-      /* line 37, src/constants/templates.scss */
-      .expandable-checkbox-list__checkbox input[type='checkbox']:hover {
-        border-color: rgba(31, 32, 65, 0.5); }
-      /* line 69, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
-      .expandable-checkbox-list__checkbox input[type='checkbox']:checked {
-        border-color: #bc9cff;
-        background-image: url("../img/checkbox-checked.svg");
-        background-position: center 30%;
-        background-repeat: no-repeat;
-        background-size: 65%; }
-    /* line 78, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
-    .expandable-checkbox-list__checkbox label {
-      color: rgba(31, 32, 65, 0.5);
-      cursor: pointer; }
 
 /* line 1, src/elements/text-field/text-field.scss */
 input.text-field {
@@ -179,10 +180,10 @@ input.text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 37, src/constants/templates.scss */
+  /* line 39, src/constants/templates.scss */
   input.text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 42, src/constants/templates.scss */
+  /* line 44, src/constants/templates.scss */
   input.text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
@@ -197,10 +198,10 @@ input.text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   padding-left: 1.1em;
   font-family: inherit; }
-  /* line 37, src/constants/templates.scss */
+  /* line 39, src/constants/templates.scss */
   .masked-text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 42, src/constants/templates.scss */
+  /* line 44, src/constants/templates.scss */
   .masked-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
 
@@ -216,10 +217,10 @@ input.text-field {
   font-family: inherit;
   display: inline-flex;
   flex-direction: row; }
-  /* line 37, src/constants/templates.scss */
+  /* line 39, src/constants/templates.scss */
   .subscription-text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 42, src/constants/templates.scss */
+  /* line 44, src/constants/templates.scss */
   .subscription-text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
   /* line 5, src/elements/subscription-text-field/subscription-text-field.scss */
@@ -237,10 +238,10 @@ input.text-field {
     border: none;
     background-color: transparent;
     width: calc(100% - 2.75em); }
-    /* line 37, src/constants/templates.scss */
+    /* line 39, src/constants/templates.scss */
     .subscription-text-field input:hover {
       border-color: rgba(31, 32, 65, 0.5); }
-    /* line 42, src/constants/templates.scss */
+    /* line 44, src/constants/templates.scss */
     .subscription-text-field input:focus {
       border-color: rgba(31, 32, 65, 0.5); }
   /* line 14, src/elements/subscription-text-field/subscription-text-field.scss */
@@ -295,13 +296,14 @@ input.text-field {
   position: absolute;
   z-index: 2;
   background-color: white;
-  width: 100%; }
-  /* line 11, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  /* line 12, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
   .service-config-dropdown__dropdown-services table {
     width: 100%;
     padding-top: 0.25em;
     padding-left: calc(1.1em); }
-    /* line 15, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
+    /* line 16, src/elements/service-config-dropdown/__dropdown-services/service-config-dropdown__dropdown-services.scss */
     .service-config-dropdown__dropdown-services table tbody {
       color: rgba(31, 32, 65, 0.75);
       box-sizing: border-box;
@@ -324,10 +326,10 @@ input.text-field {
   border-top-right-radius: 0.25em;
   display: flex;
   cursor: pointer; }
-  /* line 37, src/constants/templates.scss */
+  /* line 39, src/constants/templates.scss */
   .service-config-dropdown__text-field:hover {
     border-color: rgba(31, 32, 65, 0.5); }
-  /* line 42, src/constants/templates.scss */
+  /* line 44, src/constants/templates.scss */
   .service-config-dropdown__text-field:focus {
     border-color: rgba(31, 32, 65, 0.5); }
   /* line 8, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */
@@ -343,10 +345,10 @@ input.text-field {
     border: none;
     width: calc(100% - 2.75em);
     cursor: pointer; }
-    /* line 37, src/constants/templates.scss */
+    /* line 39, src/constants/templates.scss */
     .service-config-dropdown__text-field input[type='text']:hover {
       border-color: rgba(31, 32, 65, 0.5); }
-    /* line 42, src/constants/templates.scss */
+    /* line 44, src/constants/templates.scss */
     .service-config-dropdown__text-field input[type='text']:focus {
       border-color: rgba(31, 32, 65, 0.5); }
   /* line 16, src/elements/service-config-dropdown/__text-field/service-config-dropdown__text-field.scss */

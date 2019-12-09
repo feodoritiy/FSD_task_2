@@ -1,3 +1,4 @@
+include ../elements/checkbox/checkbox.pug
 include ../elements/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../elements/service-config-dropdown/service-config-dropdown.pug
 include ../elements/text-field/text-field.pug
@@ -33,9 +34,11 @@ html(lang="ru")
         //-subnames: [for0, for1, for2]
         +service-config-dropdown([
             { name: 'Спальни', subnames: ['Спален', 'Спальня', 'Спальни'] },
-            { name: 'Кровати', subnames: ['Кроватей', 'Кровать', 'Кровати'] }, 
+            { name: 'Кровати', subnames: ['Кроватей', 'Кровать', 'Кровати'] },
             { name: 'Ванные комнаты', subnames: ['Ванных комнат', 'Ванная комната', 'Ванные комнаты'] }
         ])
+        br
+        //- +checkbox('чекбокс')
         br
         +expandable-checkbox-list(
             "Expandalbe checkbox list", 
