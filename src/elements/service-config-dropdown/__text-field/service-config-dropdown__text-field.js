@@ -9,7 +9,6 @@ $(document).ready(() => {
     });
 
     let outputTextField = $(namespace + '__text-field input')[0];
-    console.log(outputTextField);
     outputTextField.services = []; //[{names:[],value}, {names:[],value}]
 
     outputTextField.services.define = function (service) {
