@@ -5,16 +5,19 @@
 
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	height: $blockSize;
+	align-items: flex-start;
 	margin-bottom: $spaceSize;
+
+	* {
+		box-sizing: border-box;
+	}
 
 	input[type='checkbox'] {
 		@include basicInput('height' 'padding-left' 'focus');
 		margin: 0;
 		margin-right: $spaceSize;
 		padding: 0;
-		height: 100%;
+		height: $blockSize;
 		width: $blockSize;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -36,5 +39,7 @@
 	label {
 		color: $darkshade50;
 		cursor: pointer;
+		line-height: $checkboxLineHeight; //constants/types.scss
+		margin-top: ($blockSize - 1em) / 2; //blockSize - lineHeight = necessaryMarginTop + necessaryMarginBottom = 2 * necessaryMargin
 	}
 }
