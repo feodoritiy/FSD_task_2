@@ -1,6 +1,9 @@
 @import './fonts.scss';
 @import './colors.scss';
 
+$bodyLineHeight: 1.5em;
+$checkboxLineHeight: 1.125em;
+
 %textH1 {
 	font-family: 'Quicksand', sans-serif;
 	font-style: normal;
@@ -35,6 +38,6 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: $bodyLineHeight;
 	/* or 171% */
 }

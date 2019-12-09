@@ -41,5 +41,6 @@
 		cursor: pointer;
 		line-height: $checkboxLineHeight; //constants/types.scss
 		margin-top: ($blockSize - 1em) / 2; //blockSize - lineHeight = necessaryMarginTop + necessaryMarginBottom = 2 * necessaryMargin
+		width: calc(100% - (#{$blockSize} + #{$spaceSize}));
 	}
 }

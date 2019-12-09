@@ -162,7 +162,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\n    let namespace = '.checkbox';\n    $(namespace + ' label').each(function () {\n        $(this).click(e => {\n            if (e.target.previousElementSibling.hasAttribute('checked')) {\n                e.target.previousElementSibling.removeAttribute('checked');\n            } else {\n                e.target.previousElementSibling.setAttribute('checked', '');\n            }\n        });\n    });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/checkbox/checkbox.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(() => {\r\n    let namespace = '.checkbox';\r\n    $(namespace + ' label').each(function () {\r\n        $(this).click(e => {\r\n            this.previousElementSibling.checked = !this.previousElementSibling.checked\r\n        });\r\n    });\r\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/elements/checkbox/checkbox.js?");
 
 /***/ }),
 

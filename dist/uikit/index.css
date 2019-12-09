@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:700&display=swap&subset=cyrillic-ext");
-/* line 4, src/constants/types.scss */
+/* line 7, src/constants/types.scss */
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
@@ -7,7 +7,7 @@ h1 {
   font-size: 24px;
   line-height: 30px; }
 
-/* line 12, src/constants/types.scss */
+/* line 15, src/constants/types.scss */
 h2 {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
@@ -15,7 +15,7 @@ h2 {
   font-size: 19px;
   line-height: 24px; }
 
-/* line 20, src/constants/types.scss */
+/* line 23, src/constants/types.scss */
 .icon-text-list__part-title, h3 {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
@@ -27,13 +27,13 @@ h2 {
   /* identical to box height */
   text-transform: uppercase; }
 
-/* line 33, src/constants/types.scss */
+/* line 36, src/constants/types.scss */
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5em;
   /* or 171% */ }
 
 /* line 50, src/constants/templates.scss */
@@ -78,10 +78,12 @@ body {
 .checkbox {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 1.25em;
+  align-items: flex-start;
   margin-bottom: 0.625em; }
-  /* line 12, src/elements/checkbox/checkbox.scss */
+  /* line 11, src/elements/checkbox/checkbox.scss */
+  .checkbox * {
+    box-sizing: border-box; }
+  /* line 15, src/elements/checkbox/checkbox.scss */
   .checkbox input[type='checkbox'] {
     color: rgba(31, 32, 65, 0.75);
     box-sizing: border-box;
@@ -93,7 +95,7 @@ body {
     margin: 0;
     margin-right: 0.625em;
     padding: 0;
-    height: 100%;
+    height: 1.25em;
     width: 1.25em;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -105,17 +107,20 @@ body {
     /* line 39, src/constants/templates.scss */
     .checkbox input[type='checkbox']:hover {
       border-color: rgba(31, 32, 65, 0.5); }
-    /* line 27, src/elements/checkbox/checkbox.scss */
+    /* line 30, src/elements/checkbox/checkbox.scss */
     .checkbox input[type='checkbox']:checked {
       border-color: #bc9cff;
       background-image: url("../img/checkbox-checked.svg");
       background-position: center 30%;
       background-repeat: no-repeat;
       background-size: 65%; }
-  /* line 36, src/elements/checkbox/checkbox.scss */
+  /* line 39, src/elements/checkbox/checkbox.scss */
   .checkbox label {
     color: rgba(31, 32, 65, 0.5);
-    cursor: pointer; }
+    cursor: pointer;
+    line-height: 1.125em;
+    margin-top: 0.125em;
+    width: calc(100% - (1.25em + 0.625em)); }
 
 /* line 1, src/elements/expandable-checkbox-list/expandable-checkbox-list.scss */
 .expandable-checkbox-list {
