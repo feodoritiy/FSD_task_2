@@ -5,6 +5,8 @@ $inputBorder: 1px solid $darkshade25;
 $inputPaddingLeft: 1.1em;
 $inputBorderRadius: 0.25em;
 
+$dropdownShadow: 0px 10px 20px $darkshade5;
+
 @mixin basicInput($disableList) {
 	@if (not index($disableList, 'color')) {
 		color: $darkshade75;
